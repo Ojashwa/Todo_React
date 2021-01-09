@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import React from "react";
 import "./App.css";
 
@@ -25,7 +24,7 @@ class App extends React.Component {
     // document.getElementById('t-info').addEventListener('mouseover',this.infoIcon,false);
   }
   fetchTask(e) {
-    // console.log("featching.....");
+    console.log("featching.....");
     fetch("http://127.0.0.1:8000/api/task-list/")
       .then((response) => response.json())
       .then((data) =>
@@ -65,8 +64,6 @@ class App extends React.Component {
       "afterbegin",
       "<div class='col-sm-1'><i class='far fa-circle'></i>&nbsp;</div><div class='col-sm-11 task-wrapper flex-wrapper' id='new-inp'></div>"
     );
-    console.log(setDiv.childNodes[1]);
-    // setDiv.setAttribute("class", "task-wrapper flex-wrapper");
     let inputBox = document.createElement("input");
     inputBox.setAttribute("type", "text");
     inputBox.setAttribute("class", "task-input flex-wrapper");
@@ -116,10 +113,11 @@ class App extends React.Component {
       ).catch(function (error){
         console.log("ERROR",error);// shows the if any error occur in response
       })
-    } else {
-      console.log(e.target.value);
-      // console.log(e);
-    }
+    } 
+    // else {
+    //   console.log(e.target.value);
+    //   // console.log(e);
+    // }
   }
  
   render() {
