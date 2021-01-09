@@ -4,4 +4,5 @@ django-cors-headers==3.2.1
 djangorestframwork==3.11.0
 pytz==2019.3
 sqlparse==0.3.0
-MySQL database named 'todo'
+node==14.15.1
+MySQL database named 'todo' search for DATABASES in sttings.py
