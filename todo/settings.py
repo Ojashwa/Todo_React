@@ -25,7 +25,7 @@ SECRET_KEY = '^6na-9ao1am#&*82z!6)q=dyxce65k48@dge129tx@btb=iw@n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -128,9 +128,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIR=[
-    os.path.join('frontapp/build/static')
+STATIC_URL = '/frontapp/statc/'
+STATICFILES_DIRS=[
+    os.path.join('build/static')
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
