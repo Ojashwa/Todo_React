@@ -135,5 +135,5 @@ STATICFILES_DIRS=[
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://eager-ride-9531e9.netlify.app"
+    "https://5ffaa05d1ebd0f60ed3b7f4d--determined-shannon-265f00.netlify.app"
 ]
